@@ -7,7 +7,7 @@ USE SpotifyClone;
 CREATE TABLE IF NOT EXISTS planos (
 plano_id INT PRIMARY KEY AUTO_INCREMENT,
 plano VARCHAR(50),
-valor_plano DECIMAL(5, 2),
+valor_plano DECIMAL(5, 2)
 ) engine = InnoDB;
 
 CREATE TABLE IF NOT EXISTS usuarios (
@@ -58,14 +58,14 @@ VALUES
 ('gratuito', 0),
 ('familiar', 7.99),
 ('universitário', 5.99);
-  
+
 INSERT INTO usuarios (usuario, idade, plano_id)
 VALUES
 ('Thati', 23, 1),
 ('Cintia', 35, 2),
 ('Bill', 20 , 3),
 ('Roger', 45, 1);
-  
+
 INSERT INTO cantores (cantor)
 VALUES
 ('Walter Phoenix'),
